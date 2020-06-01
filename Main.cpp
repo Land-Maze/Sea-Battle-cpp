@@ -4,22 +4,23 @@
 using namespace std;
 bool Menu(){
     cout << "\n\n\n\
-    \
-    \
-    \
-    \
-    fuck\
-    \
-    \
-    \
-    \
-    "
+          //\\                    
+         //  \\                  
+        //    \\        
+       //      \\       
+      //        \\      
+      \\        //      
+       \\      //       
+        \\    //        
+         \\  //         
+          \\//          
+\";
 }
 
 
 
 
-void main(){
+int main(){
     Menu();
 
 }
