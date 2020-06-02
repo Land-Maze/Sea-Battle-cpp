@@ -4,13 +4,27 @@
 using namespace std;
 char decision;
 bool quit=0;
-int nDot;
+int nDot = 0; long long iterration = 0;
 void Initialization(){
     cout << "\n\n\n";
 }
 
+
+void clearScreen(long long _length = 99){
+    printf ("\n\n\n\n\n\n\n\n");
+}
+
+void timer(bool _return = 0){
+ for(long long temp1;temp1<=999999999999;temp1++){
+     for(long long temp2;temp2<=999999999999;temp2++)
+     
+ }   
+ if (_return == 1) return 1;
+}
+
 short Menu(){
-system("clear");    
+if (iterration > 0) iterration = 0;
+clearScreen(); 
 cout << "          //\\\\           ||‾‾‾‾\\\\               //\\\\             ______________     ______________    ||                  //#########\n";
 cout << "         //  \\\\          ||     \\\\             //  \\\\            ‾‾‾‾‾‾||‾‾‾‾‾‾     ‾‾‾‾‾‾||‾‾‾‾‾‾    ||                 ||‾‾‾‾‾‾‾‾‾‾\n";
 cout << "        //    \\\\         ||     ||            //    \\\\                 ||                 ||          ||                 ||          \n";
@@ -33,24 +47,20 @@ if (decision == 'C' | decision == 'c'){
 } else if (decision == 'P' | decision == 'p'){
     
 } else if (decision == 'Q' | decision == 'q'){
-  system("clear");
-  cout << "\n\n\n\n\t\tARE YOU SURE?\n\n\t\tY or N\nYour decision ? || ";
+  clearScreen();
+  cout << "\n\n\n\n\t\tARE YOU SURE?\n\n\t\tY or N\n\n\tYour decision ? || ";
   cin >> decision;
   if (decision == 'Y' | decision == 'y'){
       cout << "\n\n\tOk, wait a minute";
-      while (nDot)
-      for (int temp1 = 0;temp1 <999999999;temp1++){
-          if (temp1 == 1) cout << '.'
       }
 
   }
-  else if (decision == 'N' | decision == 'n')
-  return 1;
-} else if {
-    System("clear");
+  else if (decision == 'N' | decision == 'n') Menu();
+} else {
+    clearScreen();
     cout << "\n\n\t\tPLEASE TYPE CORRECT SYMBOL. YOUR SYMBOL WAS : " << decision;
-
-}
+     
+    }
 }
 
 
